@@ -15,10 +15,7 @@ public class Fish9 : Fish
         endangeredLevel = 2;
     }
 
-    private void Update()
-    {
-        moveFoward();
-    }
+
 
 
 }

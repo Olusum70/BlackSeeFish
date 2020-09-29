@@ -14,10 +14,7 @@ public class Fish21 : Fish
         yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
     }
 
-    private void Update()
-    {
-        moveFoward();
-    }
+
 
 
 }

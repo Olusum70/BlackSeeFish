@@ -16,7 +16,7 @@ public class Fish : MonoBehaviour
     private int mSwimmingLevel = 2;
 
     public bool isBeingHeld;
-    public int id=0;
+    public static int id = 0;
 
     public int swimmingLevel
     {
@@ -47,10 +47,17 @@ public class Fish : MonoBehaviour
     private void Start()
     {
         gameObject.name = id.ToString();
+        id++;
+    }
+
+    private void Update()
+    {
+        if (!isBeingHeld)
+            moveFoward();
     }
 
 
-    protected void moveFoward()
+    void moveFoward()
     {
         float rd = Random.Range(1f, 3f) * speed * Time.deltaTime;
         transform.Translate(rd, 0, 0);

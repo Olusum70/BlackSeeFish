@@ -14,10 +14,7 @@ public class Fish8 : Fish
         swimmingLevel = 2;
     }
 
-    private void Update()
-    {
-        moveFoward();
-    }
+
 
 
 }
