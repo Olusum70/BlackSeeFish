@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8658785986907242230}
   m_Layer: 0
   m_Name: 1
-  m_TagString: Untagged
+  m_TagString: fish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,6 +102,8 @@ MonoBehaviour:
   - 0
   - 2.5
   whichSide: 0
+  isBeingHeld: 0
+  id: 0
 --- !u!114 &556361157086659563
 MonoBehaviour:
   m_ObjectHideFlags: 0
