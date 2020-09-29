@@ -1,0 +1,33 @@
+{
+    "name": "Controls",
+    "maps": [
+        {
+            "name": "Catch",
+            "id": "9809b5d2-4ea4-4221-9389-af9dfc09d84f",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "4d1c5adf-a8bd-43ab-983c-234a287cd841",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "35e586df-77b2-4c0f-b537-310f98369e8e",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "Hold(duration=0.2)",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
