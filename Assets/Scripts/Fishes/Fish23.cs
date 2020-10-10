@@ -8,10 +8,11 @@ public class Fish23 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = "Painted comber";
+        descriptionEN = "The painted comber has a laterally compressed, elongate body with a pointed snout. The dorsal fin has 10 spines and 4-16 soft rays and the anal fin has 3 spines and 7-8 soft rays. The caudal fin is truncate. It has a very large mouth for its size, which has many sharp teeth, and is protractile. The overall colour may be grey, purplish or reddish with 5-7 dark brown bars on the flanks> The head is marked with many narrow, wavy blue lines and red blotches. The dorsal, anal and caudal fins are marked with red dots. There is a diffuse, purplish-blue blotch in the middle of the body. The pelvic and pectoral fins are normally uniform pale yellow. The maximum recorded fish measurement is 36 centimetres (14 in), although 25 centimetres (9.8 in) is more typical";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 2;
+        endangeredLevel = 0;
     }
 
 

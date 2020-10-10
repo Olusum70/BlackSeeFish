@@ -8,10 +8,11 @@ public class Fish13 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = "Diplecogaster bimaculata";
+        descriptionEN = "The species has pelvic fins modified to create a sucker which is used for clinging to rocks or other hard surfaces. It shows variable colouration and its body is frequently coloured red and is spotted with violet, blue, brown or yellow, and they have a yellowish ventral surface. They are sexually dimorphic and the males show a purple spot, surrounded by yellow, immediately to the rear of their pectoral fin. It has a flattened body and a small head, which is roughly triangular in shape. The single dorsal and anal fin are situated posteriorly near to the tail and both are separate from the caudal fin which sits at the end of a long caudal peduncle. It has large eyes and a short snout which ends in large, fleshy lips and very small gill openings. This is a small fish which grows to 6 centimetres (2.4 in) in total length. D. bimaculata can be confused with the similar Apletodon dentatus, although the two-spotted clingfish extends much further north than the small-headed clingfish, and the best way to distinguish them is from their teeth, which in this species are small and conical and grow in patches and there are no large canine teeth.";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 1;
+        endangeredLevel = 0;
     }
 
 

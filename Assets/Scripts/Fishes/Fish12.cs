@@ -8,10 +8,11 @@ public class Fish12 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = "Red gurnard";
+        descriptionEN = "Gurnards are very distinctive bottom-living fish with large heads and eyes. The head is protected by large bony plates and strong spines. The lower three rays of the pectoral fins are separate, finger-like processes that contain sensory organs. These are used by the gurnard to 'feel' for small fish, crustaceans and other invertebrates living in the sediment. The red gurnard has a stout body, large head and eyes and moderately large scales. It is one of the smallest of the European gurnards reaching a maximum length of 40 cm (16 in). The coloration is bright red with pinkish-silver mottling on the sides and head. The protective bony plates on the head which are characteristic of all gurnards are very conspicuous in this species. Along the lateral line there is a row of large, plate-like scales. The divided dorsal fin has nine spines and seventeen to eighteen soft rays while the anal fin has no spines and sixteen to eighteen soft rays.";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 1;
+        endangeredLevel = 0;
     }
 
 

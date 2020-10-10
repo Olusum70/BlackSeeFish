@@ -1,7 +1,9 @@
-﻿using System;
+﻿using DG.Tweening;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MainMenuManager : MonoBehaviour
@@ -10,8 +12,24 @@ public class MainMenuManager : MonoBehaviour
     private void Start()
     {
         LocateWords();
+        goIn();
     }
 
+
+    public void singlePlayerBtn()
+    {
+        SceneManager.LoadScene("SinglePlayerGame");
+    }
+
+    public void multiPlayerBtn()
+    {
+        SceneManager.LoadScene("");
+    }
+
+    public void settingsBtn()
+    {
+
+    }
 
 
 
@@ -36,4 +54,17 @@ public class MainMenuManager : MonoBehaviour
         settings.text = inGameWordsWithAllLanguages.MainMenu[i, 2];
     }
 
+
+
+    // UI Effects-----------
+
+    [SerializeField] Button spBtn, mpBtn, setBtn;
+
+    void goIn()
+    {
+        spBtn.GetComponent<CanvasGroup>().DOFade(1, .6f).SetDelay(.6f);
+        mpBtn.GetComponent<CanvasGroup>().DOFade(1, .6f).SetDelay(.3f);
+        setBtn.GetComponent<CanvasGroup>().DOFade(1, .6f);
+
+    }
 }

@@ -27,8 +27,15 @@ static public class inGameWordsWithAllLanguages
         {"Tekli Oyuculu","Çoklu Oyunculu","Ayarlar" },
         {"","","" },
         {"","","" }
-    };
+    },
     //4
+    gameoverScreen = new string[4, 2]{
+        {"Game Over","Your Point: " },
+        {"Oyun Sona Erdi","Puanın: " },
+        {"","" },
+        {"","" }
+
+    };
 
 
 }

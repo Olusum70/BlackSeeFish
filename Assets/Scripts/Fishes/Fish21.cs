@@ -8,10 +8,11 @@ public class Fish21 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = " Pennant coralfish";
+        descriptionEN = "The reef bannerfish is a small-sized fish that can reach a maximum length of 25 cm. However, the average size generally observed in the nature oscillates around 15 cm.Its body is compressed laterally, the first rays of its dorsal fin stretch in a long white filament. The background color of its body is white with two large black diagonal bands. Beyond the second black stripe, the dorsal and the caudal fins are yellow. The pectoral fins are also yellow. The head is white, the eyes are black and linked together by a black band. The snout, spotted with black, is a bit stretched with a small terminal protractile (it can be extend) mouth.The juvenile doesn't have yet after the second black stripe any white area like adults.The pennant coralfish can easily be confused with the quite similar schooling bannerfish, (Heniochus diphreutes ). The main and visible differences are: a longer snout for the reef bannerfish and spots on its snout are darker, the pelvic fin of the reef bannerfish is longer and has a rounded end unlike the schooling bannerfish which has a smaller and more angular end.";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 2;
+        endangeredLevel = 0;
     }
 
 

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fish : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class Fish : MonoBehaviour
 
     public bool isBeingHeld;
     public static int id = 0;
+    public int selfID, species;
 
     public int swimmingLevel
     {
@@ -29,7 +31,7 @@ public class Fish : MonoBehaviour
                     yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
                     break;
                 case 2://orta seviyede
-
+                    yPosInterval[0] = 2; yPosInterval[1] = 10;
                     break;
                 case 3://üst seviyede
 
@@ -37,16 +39,14 @@ public class Fish : MonoBehaviour
                 default:
                     break;
             }
-
         }
 
 
     }
 
-
-    private void Start()
+    protected void Start()// ana classtaki metoda yazılan yalnızca bir kez çalışıyor yani alt sınıflarla beraber bu sınıf tekrar üretilmiyor. Nasıl oluyor anlamadım. base ile alttan çağırıncada 2 kez çalışıyor aq
     {
-        gameObject.name = id.ToString();
+        selfID = id;
         id++;
     }
 
@@ -59,7 +59,7 @@ public class Fish : MonoBehaviour
 
     void moveFoward()
     {
-        float rd = Random.Range(1f, 3f) * speed * Time.deltaTime;
+        float rd = Random.Range(.3f, .9f) * speed * Time.deltaTime;
         transform.Translate(rd, 0, 0);
     }
 
@@ -86,6 +86,27 @@ public class Fish : MonoBehaviour
         }
     }
 
+
+
+    public void caught()
+    {
+        SinglePlayerManager.point += 10 * endangeredLevel;
+        SinglePlayerUIEffects.lastFishesPoint = 10 * endangeredLevel;
+        GameManager.pickedUp = true;
+        SinglePlayerUIEffects.pickedUpForSPUI = true;
+        Destroy(this.gameObject);
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!isBeingHeld) return;
+        if (collision.name == "CatchPlacePanel" && SinglePlayerManager.theFishForSP.GetComponent<Fish>().species == this.species)
+        {
+            Debug.Log("worked");
+            caught();
+        }
+    }
 
 
 }

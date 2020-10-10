@@ -8,10 +8,11 @@ public class Fish22 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = "Common percarina";
+        descriptionEN = "The common percarina is distinguished from its congener P. maeotica by having no scales on its cheek, by having nearly transparent membranes on the body and fins, the upper body is milky white in colour with no spots. It also has 8-9 round or irregular markings on the base of both dorsal fins. The dorsal fins are clearly separate in both species of Percarina and in this species the first dorsal fin contains 9-10 spines while the second dorsal fin contains 3 spines and 10-12 soft rays. The anal fin has 2 spines and 8-11 soft rays. this species has a maximum published standard length of 10 centimetres (3.9 in).";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 2;
+        endangeredLevel = 0;
     }
 
 

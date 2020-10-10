@@ -8,10 +8,11 @@ public class Fish20 : Fish
     private void Start()
     {
         xPos = this.gameObject.transform.position.x;
-        nameEN = "Russian Sturgeon";
-        descriptionEN = "The Russian sturgeon can grow to 210 cm (83 in) but a more normal size is 110 to 140 cm (43 to 55 in). It has a relatively short and rounded snout with three pairs of unfringed barbels closer to the tip of the snout that to the mouth. The dorsal fin has 27 to 48 soft rays and the anal fin has 16 to 35. The number of scales along the lateral line varies from 21 to 50. This fish can be distinguish from the otherwise similar starry sturgeon by the shape of its snout, its barbels and scale arrangement. The upper surface is greyish-green, the lateral scales are pale and the belly white.";
+        nameEN = "Spicara maena";
+        descriptionEN = "Spicara maena is a fairly deep-bodied fish, with males reaching a maximum length of about 25 cm (10 in) and females 21 cm (8 in). The upper jaw is protrusible and the mouth contains several rows of small teeth. The single dorsal fin has eleven spines and twelve soft rays and the anal fin has three spines and nine or ten soft rays. There are sixty-eight to seventy scales on the lateral line. This fish is blue-grey above with silvery sides and a scattering of small dark spots. There is usually one large dark blotch above the tip of the pectoral fin. Spicara maena is a rather variable species. It has many synonyms across its wide range and is often confused with the common picarel Spicara smaris.";
         speed = 5;
-        yPosInterval[0] = 0; yPosInterval[1] = 2.5f;
+        swimmingLevel = 2;
+        endangeredLevel = 0;
     }
 
 
